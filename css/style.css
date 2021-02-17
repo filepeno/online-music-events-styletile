@@ -33,7 +33,8 @@ a {
   transition: all 1s;
 }
 button:hover {
-  box-shadow: inset 10rem 0 0 0;
+  background-color: var(--color-3);
+  color: var(--bg-color);
 }
 
 button:active {
@@ -42,7 +43,8 @@ button:active {
 
 a:hover {
   color: var(--color-3);
-  font-size: 1.5rem;
+  font-style: bold;
+  /* font-size: 1.1rem; */
 }
 html {
   font-size: 100%;
@@ -195,7 +197,7 @@ button {
 }
 
 .secondary-button {
-  background: none;
+  background: transparent;
 }
 
 button:focus,
@@ -217,9 +219,9 @@ button:focus-within {
 }
 
 .h2-sample {
-  font-family: var(--secondary-font);
+  font-family: var(--primary-font);
   /* font-style: italic; */
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   color: var(--color-3);
 }
 
