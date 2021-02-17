@@ -33,8 +33,7 @@ a {
   transition: all 1s;
 }
 button:hover {
-  /* background-color: var(--link-hover-color); */
-  transform: scale(1.1);
+  box-shadow: inset 10rem 0 0 0;
 }
 
 button:active {
@@ -42,8 +41,8 @@ button:active {
 }
 
 a:hover {
-  color: var(--link-hover-color);
-  font-size: 4rem;
+  color: var(--color-3);
+  font-size: 1.5rem;
 }
 html {
   font-size: 100%;
@@ -180,23 +179,23 @@ ul li:last-child {
 
 button {
   padding: 1rem;
-  /* border-radius: 4px; */
-  background: var(--color-5);
+  border-radius: 4px;
+  background: none;
   text-align: center;
   text-decoration: none;
   font: 1.25em/1 var(--primary-font);
   letter-spacing: 1px;
-  color: white;
+  color: var(--color-3);
   text-transform: uppercase;
   /* text-shadow: 0px -1px 0px #0374a0; */
   transition: all 0.2s ease;
   cursor: pointer;
   margin: 0 1rem 1rem 0;
-  border: none;
+  border: 2px solid var(--color-3);
 }
 
 .secondary-button {
-  background: var(--color-4);
+  background: none;
 }
 
 button:focus,
@@ -221,6 +220,7 @@ button:focus-within {
   font-family: var(--secondary-font);
   /* font-style: italic; */
   font-size: 1.25rem;
+  color: var(--color-3);
 }
 
 p.typography-sample {
@@ -253,13 +253,16 @@ p[class*="font-details-"] {
   color: #6f6f6f;
 }
 
-.adjectives ul {
-  font-size: 2rem;
-  opacity: 0.5;
+.adjectives {
+  background-color: var(--color-4);
+  padding: calc(var(--white-space) * 1.5);
+  width: 70%;
 }
 
 .adjectives ul {
   flex-direction: column;
+  font-size: 1.5rem;
+  color: var(--color-3);
 }
 
 footer {
@@ -285,7 +288,7 @@ footer {
 }
 
 @media (min-width: 900px) {
-  .adjectives ul {
+  /* .adjectives ul {
     flex-direction: row;
-  }
+  } */
 }
